@@ -1,28 +1,79 @@
-$fs: 13px;
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body {
-  font-family: 'Inter', sans-serif;
-  font-size: $fs;
-  line-height: 1.5;
-  color: var(--Gray-950);
-  background-color: var(--Gray-100);
+$fw500: 500;
+$fw600: 600;
+$Purple-50: hsl(260, 100%, 95%);
+$Purple-300: hsl(264, 82%, 80%);
+$Purple-500: hsl(263, 55%, 52%);
+$Gray-100: hsl(214, 17%, 92%);
+$Gray-200: hsl(0, 0%, 81%);
+$Gray-400: hsl(224, 10%, 45%);
+$Gray-500: hsl(217, 19%, 35%);
+$White: hsl(0, 0%, 100%);
+$Dark-blue: hsl(219, 29%, 14%);
+$Black: hsl(0, 0%, 7%);
+$mt: 1.25em;
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: var($Gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
 header {
-  font-weight: 800;
+  font-weight: $fw600;
   color: var(--Gray-950);
   display: flex;
   align-items: center;
-  margin-top: 1.25em;
-  font-weight: 900;
-  font-size: $fs;
 }
 
 header img {
-  width: 2.5em; /* 40px -> 2.5em */
-  height: 2.5em; /* 40px -> 2.5em */
   border-radius: 50%;
-  margin-right: 0.625em; /* 10px -> 0.625em */
+  margin-right: 0.625em;
+}
+
+header .graduate-status {
+  font-weight: $fw500;
+  color: var(--Gray-600);
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+@mixin testimonial() {
+  border-radius: 0.625em;
+  padding: 1.25em;
+  box-shadow: 20px 20px rgba(0, 0, 0, $Black);
+  max-width: 600px;
+  margin: 2em;
+}
+
+@mixin testimonial-p {
+  font-weight: $fw600;
+  color: var(--Gray-500);
+  line-height: 1.5;
+  margin-top: $mt;
+}
+
+.testimonial {
+  @include testimonial();
+}
+
+.testimonial p {
+  @include testimonial-p();
+}
+
+.testimonial blockquote {
+  font-weight: $fw500;
+  color: var(--Gray-500);
+  margin-top: $mt;
 }
