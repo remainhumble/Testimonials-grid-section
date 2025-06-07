@@ -1,0 +1,28 @@
+$fs: 13px;
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: $fs;
+  line-height: 1.5;
+  color: var(--Gray-950);
+  background-color: var(--Gray-100);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-weight: 800;
+  color: var(--Gray-950);
+  display: flex;
+  align-items: center;
+  margin-top: 1.25em;
+  font-weight: 900;
+  font-size: $fs;
+}
+
+header img {
+  width: 2.5em; /* 40px -> 2.5em */
+  height: 2.5em; /* 40px -> 2.5em */
+  border-radius: 50%;
+  margin-right: 0.625em; /* 10px -> 0.625em */
+}
