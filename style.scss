@@ -22,7 +22,7 @@ $mt: 1.25em;
 
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
-  background-color: var($Gray-100);
+  background-color: $Gray-100;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,18 +41,11 @@ header img {
   margin-right: 0.625em;
 }
 
-header .graduate-status {
-  font-weight: $fw500;
-  color: var(--Gray-600);
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-
 @mixin testimonial() {
   border-radius: 0.625em;
   padding: 1.25em;
-  box-shadow: 20px 20px rgba(0, 0, 0, $Black);
+  box-shadow: 0 8px 24px 4px rgba(0, 0, 0, 0.18),
+    8px 0 24px 4px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin: 2em;
 }
@@ -72,8 +65,67 @@ header .graduate-status {
   @include testimonial-p();
 }
 
+header .graduate-status {
+  font-weight: $fw500;
+  color: $Gray-200;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+h2 {
+  font-weight: $fw500;
+
+
+}
+
 .testimonial blockquote {
   font-weight: $fw500;
   color: var(--Gray-500);
   margin-top: $mt;
+}
+
+.testimonial:nth-child(1) {
+  background-color: $Purple-500;
+  color: $White;
+}
+
+.testimonial:nth-child(1) img {
+  border: 3px solid $Purple-300;
+}
+
+.testimonial:nth-child(2) {
+  background-color: $Gray-500;
+  color: $White;
+}
+
+.testimonial:nth-child(2) img {
+  border: 3px solid $Gray-100;
+}
+
+.testimonial:nth-child(3) {
+  background-color: $White;
+  color: $Gray-500;
+}
+
+.testimonial:nth-child(3) img {
+  border: 3px solid $White;
+}
+
+.testimonial:nth-child(4) {
+  background-color: $Dark-blue;
+  color: $Gray-100;
+}
+
+.testimonial:nth-child(4) img {
+  border: 3px solid $Purple-500;
+}
+
+.testimonial:nth-child(5) {
+  background-color: $White;
+}
+
+.testimonial:nth-child(5) img {
+  border: 3px solid $White;
+  color: $Gray-500;
 }
