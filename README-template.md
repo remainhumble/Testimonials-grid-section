@@ -16,9 +16,10 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
+This project is a responsive testimonials grid section built as part of a Frontend Mentor challenge. The goal was to create a visually appealing layout that adapts seamlessly to different screen sizes using modern CSS techniques. The component displays multiple user testimonials in a grid, emphasizing accessibility and clean design. It was a great opportunity to practice CSS Grid, Flexbox, and a mobile-first workflow, as well as to reinforce best practices in semantic HTML and component-based development.
 
 ### The challenge
 
@@ -28,15 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./mobile-view.png)
+![](./desktop-view.png)
 
 ### Links
 
