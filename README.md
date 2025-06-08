@@ -70,4 +70,3 @@ In future projects, I want to continue focusing on:
 - Frontend Mentor - [@remainhumble](https://www.frontendmentor.io/profile/remainhumble)
 - X(formerly Twitter) - [@thiflan120699](https://x.com/thiflan120699)
 
-
